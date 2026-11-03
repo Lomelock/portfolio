@@ -1,241 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HSZW3ZMZJE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-HSZW3ZMZJE');
-</script><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HSZW3ZMZJE"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singra lomelock</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Designer (1).jpeg" type="image/x-icon">
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Singra Lomelock | Web Designer &amp; Developer, Tanzania</title>
+<meta name="description" content="Singra Lomelock – web developer and designer building websites for tour operators, homestays and local businesses in Tanzania.">
+<link rel="icon" href="Designer (1).jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf3e8; --surface:#fff; --ink:#2a1d17; --muted:#6b5a4e;
+  --earth:#b5532a; --earth-dark:#8c3d1c; --sand:#ecd9bd; --night:#1f1612; --line:#e4d3ba;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#17100d; --surface:#241913; --ink:#f4e8d8; --muted:#b9a794; --earth:#e0733f; --earth-dark:#f08a57; --sand:#3a2a20; --night:#0f0a08; --line:#3b2b20; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.15;margin:0}
+a{color:var(--earth-dark)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* Nav */
+.topbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-family:"Fraunces",serif;font-weight:800;font-size:1.3rem;text-decoration:none;color:var(--ink)}
+.logo span{color:var(--earth)}
+nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--earth)}
+
+/* Hero */
+.hero{padding:56px 0 48px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:700;color:var(--earth)}
+.hero h1{font-size:clamp(2.3rem,5.5vw,3.9rem);font-weight:800;margin:12px 0 18px}
+.hero h1 em{font-style:normal;color:var(--earth)}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:52ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--earth)}
+.btn.primary{background:var(--earth);color:#fff}
+.btn.primary:hover{background:var(--earth-dark);border-color:var(--earth-dark)}
+.btn.ghost{color:var(--earth-dark)}
+.btn.ghost:hover{background:var(--sand)}
+.photo{position:relative}
+.photo img{width:100%;height:auto;display:block;border-radius:22px;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+.photo::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:3px solid var(--earth);border-radius:22px;z-index:-1}
+.photo figcaption{font-size:.85rem;color:var(--muted);margin-top:22px}
+
+/* Sections */
+section{padding:60px 0}
+.sec-title{font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:10px}
+.sec-title::after{content:"";display:block;width:56px;height:4px;background:var(--earth);margin-top:12px;border-radius:2px}
+.lead{color:var(--muted);max-width:68ch}
+.about p{max-width:75ch}
+
+/* Projects */
+.projects{display:grid;gap:22px;margin-top:30px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;display:grid;grid-template-columns:70px 1fr;gap:20px}
+.project .num{font-family:"Fraunces",serif;font-size:2.8rem;font-weight:800;color:var(--earth);opacity:.5;line-height:1}
+.project h3{font-size:1.5rem}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--sand);color:var(--earth-dark);padding:3px 10px;border-radius:999px;margin:8px 6px 8px 0}
+.project p{margin:6px 0 12px;color:var(--muted)}
+.project ul{margin:0 0 16px;padding-left:18px}
+.project li{margin:3px 0}
+.project .btn{padding:9px 18px;font-size:.92rem}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:30px}
+.skill{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--earth);border-radius:12px;padding:20px}
+.skill h3{font-size:1.1rem;margin-bottom:6px}
+.skill p{margin:0;font-size:.95rem;color:var(--muted)}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:30px}
+.gallery img{width:100%;height:100%;max-height:420px;object-fit:cover;border-radius:14px}
+
+/* Contact */
+.contact{background:var(--night);color:#f4e8d8}
+.contact .sec-title{color:#f4e8d8}
+.contact a{color:#f3a373}
+.contact ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:10px;font-size:1.05rem}
+.contact strong{display:inline-block;min-width:90px;color:#c9b8a5;font-weight:500}
+
+footer{background:var(--night);color:#a89684;text-align:center;padding:20px;font-size:.88rem;border-top:1px solid #33241b}
+
+@media(max-width:800px){
+  .hero .wrap{grid-template-columns:1fr}
+  .photo{order:-1;max-width:460px}
+  .project{grid-template-columns:1fr;gap:6px}
+}
+</style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <h2>
-            <header>
-                <div class="logo">
-                    <span class="logo-text">Singra</span><span class="logo-subtext">Lomelock</span>
-                </div>
-        </h2>
-        <div class="profile-photo">
-            <img src="Screenshot_20220906-111635~2.jpg" alt="Profile Photo" />
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="#top">Singra<span>Lomelock</span></a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Web Designer &amp; Developer · Tanzania</div>
+        <h1>I build websites that bring <em>travelers</em> to your door.</h1>
+        <p>From Maasai homestays at Lake Natron to luxury safari operators, I design fast, mobile-friendly websites that tell a business's story and turn visitors into bookings.</p>
+        <div class="btns">
+          <a class="btn primary" href="#projects">See my work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Singra Lomelock  
-            I am a passionate and versatile professional with a strong background in Web Development, Design, and Tourism. I hold a Diploma in Records Management and a Tour Operator Certificate, and I am proficient in both English and Swahili. With expertise in Wix, WordPress, and HTML, I design and develop responsive websites that meet the unique needs of clients, whether they are personal, business, or e-commerce websites.  
-            Additionally, I am skilled in creating stunning marketing materials such as brochures, business cards, and tour packages using Canva. I have hands-on experience in email management and website management, ensuring smooth communication and optimal website performance. Whether working with local businesses or international clients, I bring a detail-oriented approach, creative solutions, and excellent communication to every project.
-            </p>
-    </section>
-
-    <!-- Projects Section -->   <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <h2>Mwala Tours and Safaris</h2>
-            <p>Designed and developed a beautiful website for a local tour operator, showcasing their various tour packages. The website includes a gallery for images, a booking form, and a section to display client testimonials. The site is fully responsive and optimized for both desktop and mobile use, making it easy for users to explore and book their next adventure.
-
-                - Key Features:  
-                  - Tour package display  
-                  - Image gallery  
-                  - Booking form integration <br> 
-                
-                Live Link: <a href="https://www.mwalatours.com" target="_blank">www.mwalatours.com</a></p>
-                </p>
-        </div>
-        <div class="project">
-            <h3>project 2</h3>
-            <h2>Travel Blog</h2>
-            <p>A beutiful Travel blog<br>
-
-                Client: Mwala Tours (Local Tour Operator)  
-                <br>Platform Used: WordPress <br> 
-                Project Type: Website Design and Development<br>  
-                
-                Overview:  
-                I designed and developed the Mwala Tours website to create an online presence for the company, providing detailed information about their tour packages and services. The website serves as an engaging platform where visitors can explore various travel options and learn about the experiences offered by the tour operator.
-                
-                The site features a clean, modern design with an intuitive layout, ensuring easy navigation for users. I integrated key elements such as detailed tour descriptions, gallery for showcasing destinations, and a contact form for inquiries, allowing potential customers to easily reach out for more information or to book their next adventure.
-               <br> Key Features:
-         <br><strong>Tour Package Display:</strong> Clear sections showcasing the tour packages available, each with detailed descriptions and attractive visuals.
-       <br><strong>Image Gallery:</strong> A visually rich gallery that highlights the destinations and experiences that Mwala Tours offers.
-         <br><strong>Contact Form:</strong> A user-friendly form for customers to inquire or make bookings.
-       <br><strong>Responsive Design:</strong>The website is fully optimized for both desktop and mobile devices, ensuring accessibility for users across all platforms.
-          <br> <strong>Simple Navigation: </strong>Easy-to-use navigation menu for users to find relevant information about tours, packages, and contact details.
-
-        <br><strong>Outcome:</strong>
-         The website successfully enhances Mwala Tours' online visibility and provides an easy-to-navigate platform for clients to explore their tour options. It helps improve customer engagement, making it easier for visitors to inquire and book services.
-
-        Live Link: <a href="https://mwalatours.wordpress.com/" target="_blank">mwalatours.wordpress.com
-                </a></p>
-
-
-                
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-
-        <style>
-            .skills-section {
-              max-width: 800px;
-              margin: auto;
-              background: #fff;
-              padding: 30px;
-              border-radius: 10px;
-              box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            }
-            .skills-section h2 {
-              color: #ff6600;
-              font-size: 28px;
-              margin-bottom: 20px;
-            }
-            .skill {
-              margin-bottom: 20px;
-            }
-            .skill h3 {
-              color: #222;
-              font-size: 20px;
-              margin-bottom: 5px;
-            }
-            .skill p {
-              font-size: 16px;
-              line-height: 1.5;
-            }
-          </style>
-        </head>
-        <body>
-        
-          <div class="skills-section">
-            <h2>Skills</h2>
-        
-            <div class="skill">
-              <h3>Search Engine Optimization (SEO)</h3>
-              <p>Proficient in on-page and off-page SEO techniques, keyword research, content optimization, and technical SEO best practices to improve website visibility and organic traffic.</p>
-            </div>
-        
-            <div class="skill">
-              <h3>Google Analytics</h3>
-              <p>Skilled in setting up and interpreting Google Analytics data to track website performance, user behavior, and conversion metrics, enabling data-driven decision-making.</p>
-            </div>
-        
-            <div class="skill">
-              <h3>Google Ads</h3>
-              <p>Experienced in creating, managing, and optimizing Google Ads campaigns including Search, Display, and Video ads, with a focus on ROI, quality score, and ad relevance.</p>
-            </div>
-        
-            <div class="skill">
-              <h3>Social Media Advertising</h3>
-              <p>Competent in running targeted ad campaigns on platforms like Facebook, Instagram, and LinkedIn. Able to design ad creatives, define audience segments, and analyze campaign performance for optimal results.</p>
-            </div>
-          </div>
-        <ul>
-            <li>Web Development & Design:
-                - Proficient in Wix and WordPress for building and maintaining websites.
-                Solid understanding of HTML, ensuring clean and effective web page designs.
-               - Ability to create responsive, user-friendly websites that deliver seamless experiences across all devices.
-
-            </li>
-            <li>Graphic Design:
-                - Skilled in Canva for creating high-quality marketing materials including brochures, business cards, and tour packages.
-                - Eye for design, ensuring that visuals are both aesthetically pleasing and effective in communicating key messages.
-              </li>
-            <li>
-                Email & Website Management:
-                - Experienced in email management (organizing and managing email campaigns, customer communication).
-                - Proficient in website management—ensuring that websites are up-to-date, fully functional, and optimized for performance.
-              
-              
-            </li>
-            <li>Communication:
-                - Fluent in both English and Swahili, allowing for effective communication with diverse clients and teams.
-                 Strong verbal and written communication skills, adept at managing client expectations and ensuring satisfaction.
-              
-              </li>
-            <li>
-                 Records Management: Diploma in Records Management, ensuring a solid understanding of data organization and retrieval. Proficient in maintaining accurate records and ensuring compliance with data management standards.
-            </li>
-              <li>
-                 Tourism & Hospitality: Certified Tour Operator with industry-specific knowledge for designing travel-related content, tour packages, and more. Experienced in creating engaging and informative materials that cater to the needs of travelers and businesses in the tourism sector.
-              </li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
-
-
-<section>
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="Screenshot (65).png" alt="Gallery Image 1" />
-        <img src="Screenshot (67).png" alt="Gallery Image 2" />
-        <img src="Screenshot (68).png" alt="Gallery Image 3" />
-        <img src="Screenshot (68).png" alt="Gallery Image 4" />
-        <img src="Screenshot (44).png" alt="Gallery Image 5" />
-        <img src="Screenshot (45).png" alt="Gallery Image 6" />
-        <img src="Screenshot (46).png" alt="Gallery Image 7" />
-        <img src="Screenshot (47).png" alt="Gallery Image 8" />
-        <img src="Screenshot (72).png" alt="Gallery Image 9"/>
-        <img src="Screenshot (73).png" alt="Gallery Image 9"/>
-        <img src="Screenshot (75).png" alt="Gallery Image 9"/>
-        <img src="Screenshot (78).png" alt="Gallery Image 9"/>
-        <img src="Screenshot (79).png" alt="Gallery Image 9"/>
-        <img src="Screenshot (80).png" alt="Gallery Image 9"/>
-        <img src="Screenshot (81).png" alt="Gallery Image 9"/>
-        <img src="Screenshot_20220906-111635~2.jpg" alt="Gallery Image 9"/>
-        <!-- Add more images as needed -->
+      </div>
+      <figure class="photo" style="margin:0">
+        <img src="creator.jpg" alt="Singra Lomelock smiling with a group of children in a Maasai village near Lake Natron">
+        <figcaption>On location in a Maasai community near Lake Natron, where I gather stories and photos for client websites.</figcaption>
+      </figure>
     </div>
-    <style>
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .gallery img {
-            width: calc(33.333% - 10px); /* Adjust the width as needed */
-            height: auto;
-        }
-    </style>
-</section>
+  </div>
 
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2 class="sec-title">About Me</h2>
+      <p>I am a passionate and versatile professional with a strong background in web development, design and tourism. I hold a Diploma in Records Management and a Tour Operator Certificate, and I am fluent in English and Swahili. With expertise in Wix, WordPress and HTML, I build responsive websites for personal, business and e-commerce clients.</p>
+      <p>I also create marketing materials such as brochures, business cards and tour packages in Canva, and I have hands-on experience in email and website management. Whether I'm working with local businesses or international clients, I bring a detail-oriented approach, creative solutions and clear communication to every project.</p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:lomelocklaizer@gmail.com">lomelocklaizer@gmail.com</a></p>
-        <p>Phone: +255 686644707</p>
-        <p>Phone: +255 699404174</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/lomelock laizer" target="_blank">lomelocklaizer</a></p>
-        <!-- Add other contact methods if needed -->
-    </section>
+  <!-- Projects -->
+  <section id="projects" style="background:var(--surface);border-block:1px solid var(--line)">
+    <div class="wrap">
+      <h2 class="sec-title">Selected Projects</h2>
+      <p class="lead">Live websites I designed and built for tourism businesses around Lake Natron and northern Tanzania.</p>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Singra Lomelock. All rights reserved.</p>
-    </footer>
+      <div class="projects">
+
+        <article class="project">
+          <div class="num">01</div>
+          <div>
+            <h3>Maasai Boma Homestay – Lake Natron</h3>
+            <span class="tag">Homestay</span><span class="tag">Wix</span><span class="tag">Cultural Tourism</span>
+            <p>A website for a Maasai family homestay in Engare Sero, at the foot of Ol Doinyo Lengai. It presents authentic cultural experiences such as morning milking, cooking with Maasai mamas, chai, cattle herding walks, storytelling by the fire and traditional dance, plus an optional trip to the east side of the lake.</p>
+            <ul>
+              <li>Activities pages: cultural, Lake Natron and east-lake tours</li>
+              <li>Room and camping photo galleries</li>
+              <li>Host story, reservation page, contact form and newsletter sign-up</li>
+            </ul>
+            <a class="btn primary" href="https://www.maasaibomahomestaylakenatron.com" target="_blank" rel="noopener">Visit website ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="num">02</div>
+          <div>
+            <h3>Kazana Safaris Tours</h3>
+            <span class="tag">Safari Operator</span><span class="tag">Custom Build</span><span class="tag">Luxury Travel</span>
+            <p>A polished website for a Tanzanian-owned operator offering bespoke safaris across the Serengeti, Ngorongoro Crater, Tarangire, Lake Natron and Zanzibar. It features destination pages, curated package itineraries and an enquiry form for tailor-made trips.</p>
+            <ul>
+              <li>Destination pages for each park and region</li>
+              <li>Featured packages: Short Circuit, Northern Circuit, Grand Luxury and Great Migration</li>
+              <li>Wildlife gallery and "Plan Your Journey" enquiry form</li>
+            </ul>
+            <a class="btn primary" href="https://www.kazanasafaristours.com" target="_blank" rel="noopener">Visit website ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="num">03</div>
+          <div>
+            <h3>Eagle Nest Lake Natron</h3>
+            <span class="tag">Guest House</span><span class="tag">Hospitality</span><span class="tag">Responsive Design</span>
+            <p>A website for a guest house near Lake Natron, helping travelers discover the accommodation, see what the area offers and get in touch to book their stay. Built to load quickly and look great on phones.</p>
+            <ul>
+              <li>Accommodation showcase with photos</li>
+              <li>Mobile-first, easy navigation</li>
+              <li>Direct enquiry and booking contact</li>
+            </ul>
+            <a class="btn primary" href="https://www.eaglenestnatron.com" target="_blank" rel="noopener">Visit website ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="wrap">
+      <h2 class="sec-title">Skills</h2>
+      <div class="skills">
+        <div class="skill"><h3>Web Development &amp; Design</h3><p>Wix, WordPress and clean HTML/CSS. Responsive, user-friendly sites that work on every device.</p></div>
+        <div class="skill"><h3>SEO</h3><p>On-page and technical SEO, keyword research and content optimization to grow organic traffic.</p></div>
+        <div class="skill"><h3>Google Analytics</h3><p>Tracking setup and reporting on visitors, behavior and conversions for data-driven decisions.</p></div>
+        <div class="skill"><h3>Google Ads</h3><p>Search, Display and Video campaigns focused on ROI, quality score and ad relevance.</p></div>
+        <div class="skill"><h3>Social Media Advertising</h3><p>Targeted Facebook, Instagram and LinkedIn campaigns with creatives and audience analysis.</p></div>
+        <div class="skill"><h3>Graphic Design</h3><p>Brochures, business cards and tour packages designed in Canva.</p></div>
+        <div class="skill"><h3>Email &amp; Website Management</h3><p>Email campaigns, customer communication, and keeping sites updated and fast.</p></div>
+        <div class="skill"><h3>Tourism &amp; Records Management</h3><p>Certified Tour Operator with a Diploma in Records Management. Fluent in English and Swahili.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" style="background:var(--surface);border-block:1px solid var(--line)">
+    <div class="wrap">
+      <h2 class="sec-title">Gallery</h2>
+      <p class="lead">Moments from the field. Add more photos below as you collect them.</p>
+      <div class="gallery">
+        <img src="creator.jpg" alt="Singra Lomelock with children in a Maasai village near Lake Natron">
+        <!-- Add more images as needed, e.g. <img src="photo2.jpg" alt="Description"> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2 class="sec-title">Let's build your website</h2>
+      <p style="max-width:60ch;color:#c9b8a5">Have a lodge, tour company or business that needs an online presence? Reach out and let's talk.</p>
+      <ul>
+        <li><strong>Email</strong> <a href="mailto:lomelocklaizer@gmail.com">lomelocklaizer@gmail.com</a></li>
+        <li><strong>Phone</strong> <a href="tel:+255686644707">+255 686 644 707</a></li>
+        <li><strong>Phone</strong> <a href="tel:+255699404174">+255 699 404 174</a></li>
+        <li><strong>LinkedIn</strong> <a href="https://linkedin.com/in/lomelocklaizer" target="_blank" rel="noopener">linkedin.com/in/lomelocklaizer</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Singra Lomelock. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
